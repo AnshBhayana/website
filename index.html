@@ -15,40 +15,38 @@
     <!-- Browser Theme Color -->
     <meta name="theme-color" content="#E95D2A" />
 
-    <!-- ==========================================
-         FAVICONS - VERSION 8 (AB logo)
-         Files located in /public/
-    =========================================== -->
+    <!-- Google needs a stable, crawlable favicon URL (square, multiple of 48px).
+         No ?v= cache-busters: changing the URL resets Google's favicon crawl. -->
+    <link rel="icon" href="/favicon.ico" sizes="48x48" />
+    <link rel="icon" type="image/png" href="/favicon-48x48.png" sizes="48x48" />
+    <link rel="icon" type="image/png" href="/icon-192x192.png" sizes="192x192" />
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 
-    <!-- Multi-size ICO (fallback for older browsers and default /favicon.ico requests) -->
-    <link rel="icon" href="/favicon.ico?v=9" sizes="any" />
-
-    <!-- PNG favicons -->
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="48x48"
-      href="/favicon-48x48.png?v=9"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/favicon-32x32.png?v=9"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/favicon-16x16.png?v=9"
-    />
-
-    <!-- Apple Touch Icon -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/apple-touch-icon.png?v=9"
-    />
+    <!-- Tells Google the site name and its logo -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://www.anshbhayana.com/#website",
+            "url": "https://www.anshbhayana.com/",
+            "name": "Ansh Bhayana",
+            "alternateName": ["Ansh Bhayana Content Strategist"]
+          },
+          {
+            "@type": "Person",
+            "@id": "https://www.anshbhayana.com/#person",
+            "name": "Ansh Bhayana",
+            "url": "https://www.anshbhayana.com/",
+            "image": "https://www.anshbhayana.com/icon-512x512.png",
+            "jobTitle": "Content Strategist, Creator & Creative Producer"
+          }
+        ]
+      }
+    </script>
 
     <!-- ==========================================
          CANONICAL URL
