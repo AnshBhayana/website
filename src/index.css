@@ -1685,6 +1685,13 @@ ol {
   .enquiry .btn {
     width: 100%;
   }
+  .briefBar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .briefBar .btn {
+    align-self: center;
+  }
 }
 
 /* ---------- Desktop refinements (801px and up) ---------- */
