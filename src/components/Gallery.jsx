@@ -12,7 +12,7 @@ function Photo({ photo, hidden }) {
         alt={hidden ? "" : photo.alt}
         width={photo.width}
         height={photo.height}
-        loading={hidden ? "lazy" : "eager"}
+        loading="eager"
         decoding="async"
         draggable="false"
       />
