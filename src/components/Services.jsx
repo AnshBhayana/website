@@ -21,8 +21,8 @@ export default function Services() {
                   aria-expanded={isOpen}
                   aria-controls={`svc-panel-${i}`}
                   id={`svc-btn-${i}`}
-                  onClick={() => setOpen(isOpen ? -1 : i)}
-                  onMouseEnter={() => window.matchMedia("(hover: hover)").matches && setOpen(i)}
+                  onClick={() => setOpen((cur) => (cur === i ? -1 : i))}
+                  onPointerEnter={(e) => e.pointerType === "mouse" && setOpen(i)}
                 >
                   <span className="svcIdx">{i + 1}</span>
                   <span className="svcName">{c.title}</span>
@@ -30,11 +30,13 @@ export default function Services() {
                 </button>
               </h3>
               <div className="svcPanel" id={`svc-panel-${i}`} role="region" aria-labelledby={`svc-btn-${i}`}>
-                <ul>
-                  {c.items.map((it) => (
-                    <li key={it}>{it}</li>
-                  ))}
-                </ul>
+                <div className="svcPanelInner">
+                  <ul>
+                    {c.items.map((it) => (
+                      <li key={it}>{it}</li>
+                    ))}
+                  </ul>
+                </div>
               </div>
             </div>
           );
