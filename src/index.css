@@ -1590,15 +1590,23 @@ ol {
     align-items: flex-start;
   }
   .heroPanel {
-    grid-template-columns: 1fr;
+    /* minmax(0, 1fr), not 1fr: plain 1fr lets WebKit widen the column past the panel */
+    grid-template-columns: minmax(0, 1fr);
     grid-template-areas:
       "text"
       "photo"
       "meta";
   }
+  .heroText,
+  .heroMeta {
+    min-width: 0;
+  }
   .heroPhoto {
-    margin: 28px auto 0;
-    max-width: 380px;
+    margin: 28px 0 0;
+    width: 100%;
+    min-width: 0;
+    max-width: min(380px, 100%);
+    justify-self: center;
   }
   .heroFrame { border-radius: 18px; }
   .heroSlate { border-radius: 0 0 18px 18px; }
