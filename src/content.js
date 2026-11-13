@@ -50,7 +50,7 @@ export const impact = {
   title: "Impact at a glance",
     items: [
     { value: 40, suffix: "+", label: "Celebrity interviews" },
-    { value: 30, suffix: "M+", label: "Entertainment platform experience" },
+    { value: 1, suffix: "B+", label: "Entertainment platform experience" },
     { value: 300, suffix: "M+", label: "Branded content views" },
     { value: 2.5, suffix: " yrs", label: "Leading Capture A Trip's content team", decimals: 1 },
     { value: 50, suffix: "+", label: "Sponsored trips for content" },
@@ -69,7 +69,7 @@ export const work = {
       imageAlt: "Ansh with Shaan, Raveena Tandon and Ali Fazal at Instant Bollywood interviews",
       fit: "contain",   // ← add this line
       logo: "/assets/insta.JPG",
-      text: "Interviews for a 30M+ entertainment platform. Research, ideation, scripting and production for every conversation, then viral reel cuts and packaging.",
+      text: "Interviews for a 1B+ entertainment platform. Research, ideation, scripting and production for every conversation, then viral reel cuts and packaging.",
       results: ["40+ celebrity interviews", "Interviews include Shaan and Raveena Tandon"],
       links: [
         { label: "YouTube interview", href: "https://www.youtube.com/watch?v=rS7zCuus-p0" },
@@ -207,7 +207,7 @@ export const experience = {
       points: [
         "Researched, ideated, scripted and conducted 40+ celebrity interviews",
         "Interviews include Shaan and Raveena Tandon",
-        "Managed viral reel cuts and packaging for a 30M+ entertainment platform",
+        "Managed viral reel cuts and packaging for a 1B+ entertainment platform",
       ],
     },
     {
