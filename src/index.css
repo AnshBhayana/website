@@ -1638,7 +1638,16 @@ ol {
   }
   .project,
   .projectFlip {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
+    padding: 36px 0;
+    border-top: 1px solid var(--line); /* divider between 01, 02, 03... like desktop */
+  }
+  .projects {
+    gap: 0;
+  }
+  .project:first-child {
+    border-top: 0;
+    padding-top: 8px;
   }
   .projectFlip .projectMedia {
     order: 0;
